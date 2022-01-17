@@ -34,7 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,          
           export CURRENT_RUN_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          export DESCRIPTION="${{ github.event.release.body }}
+          export DESCRIPTION="${{ github.event.release.body }}"
           echo DESCRIPTION is $DESCRIPTION,
           echo CURRENT_RUN_URL is $CURRENT_RUN_URL.
           
